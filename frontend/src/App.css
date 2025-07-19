@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.ibb.co/tZxHkB6/cork-texture.jpg') repeat;
+  font-family: Arial, sans-serif;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.note {
+  background: #fff475;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+  transform: rotate(-1deg);
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+.add-btn:hover {
+  background: #e73370;
+}
