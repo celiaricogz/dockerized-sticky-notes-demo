@@ -1,45 +1,163 @@
 body {
   margin: 0;
-  padding: 0;
-  background: url('https://i.ibb.co/tZxHkB6/cork-texture.jpg') repeat;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f4f7fb, #e1e7f0);
+  color: #333;
 }
 
+/* Header fijo con branding */
+.header {
+  background: #2b6cb0;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Landing */
+.landing {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.landing h2 {
+  font-size: 2rem;
+  color: #2b6cb0;
+}
+
+.landing p {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #2b6cb0;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background: #1e4e8c;
+}
+
+/* Tablero de notas */
 .board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, 240px);
   gap: 20px;
   padding: 40px;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
 }
 
 .note {
-  background: #fff475;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
-  transform: rotate(-1deg);
-  transition: transform 0.2s;
+  background: #fffdf0;
+  border: 1px solid #eee3a3;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+  height: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .note:hover {
-  transform: rotate(0deg) scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.note.editing {
+  background: #fff;
+}
+
+.note input,
+.note textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.note textarea {
+  flex: 1;
+  resize: none;
+}
+
+/* Acciones */
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.actions button:nth-child(1) { background: #38a169; }
+.actions button:nth-child(2) { background: #e53e3e; }
+.actions button:nth-child(3) { background: #718096; }
 
 .add-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #ff4081;
+  background: #2b6cb0;
   color: white;
   border: none;
-  border-radius: 50%;
   width: 60px;
   height: 60px;
-  font-size: 36px;
+  border-radius: 50%;
+  font-size: 32px;
   cursor: pointer;
-  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+  transition: background 0.3s;
 }
 
 .add-btn:hover {
-  background: #e73370;
+  background: #1e4e8c;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }

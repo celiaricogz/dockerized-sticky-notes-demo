@@ -1,36 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Landing from './Landing';
+import NotesBoard from './NotesBoard';
 import './App.css';
 
 function App() {
-  const [notes, setNotes] = useState([]);
-
-  useEffect(() => {
-    fetch('/notes')
-      .then(res => res.json())
-      .then(data => setNotes(data));
-  }, []);
-
-  const addNote = async () => {
-    const newNote = { title: 'New Note', content: 'Write something here...' };
-    const res = await fetch('/notes', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newNote)
-    });
-    const saved = await res.json();
-    setNotes([saved, ...notes]);
-  };
-
   return (
-    <div className="board">
-      {notes.map(note => (
-        <div className="note" key={note.id}>
-          <h3>{note.title}</h3>
-          <p>{note.content}</p>
-        </div>
-      ))}
-      <button className="add-btn" onClick={addNote}>+</button>
-    </div>
+    <Router>
+      <header className="header">
+        <h1>Sticky Notes – Dockerized Demo</h1>
+        <p>React • Node.js • Postgres • Docker</p>
+        <nav>
+          <Link to="/">Inicio</Link>
+          <Link to="/notes">Tablero</Link>
+          <a href="https://github.com/celiaricogz/tristack-demo" target="_blank" rel="noopener noreferrer">
+            Código
+          </a>
+        </nav>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/notes" element={<NotesBoard />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
