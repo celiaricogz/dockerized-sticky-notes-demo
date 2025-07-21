@@ -1,4 +1,4 @@
-# tristack-demo# Sticky Notes – Dockerized Full-Stack App
+Sticky Notes – Dockerized Full-Stack App
 
 ![Sticky Notes Screenshot](./docs/screenshot.png)
 
