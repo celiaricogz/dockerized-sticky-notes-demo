@@ -1,12 +1,10 @@
 # Sticky Notes – Dockerized Full-Stack App
 
-![Sticky Notes Screenshot](./docs/screenshot.png)
-
 Una aplicación de notas simple pero moderna, diseñada para demostrar un flujo **Full-Stack (React + Node.js + Postgres)** totalmente **dockerizado**, con entornos diferenciados para desarrollo y producción.
 
 ---
 
-## ✨ Características
+## Características
 
 - **Frontend:** React con React Router, diseño limpio estilo SaaS.
 - **Backend:** Node.js + Express + Postgres (persistencia real).
@@ -17,7 +15,7 @@ Una aplicación de notas simple pero moderna, diseñada para demostrar un flujo 
 
 ---
 
-## 🚀 Tecnologías usadas
+## Tecnologías usadas
 - React + React Router (Frontend)
 - Node.js + Express (API)
 - PostgreSQL 15 (DB)
@@ -26,7 +24,7 @@ Una aplicación de notas simple pero moderna, diseñada para demostrar un flujo 
 
 ---
 
-## 📦 Cómo levantar el proyecto
+## Cómo levantar el proyecto
 
 ### Desarrollo (con hot reload)
 ```bash
@@ -41,14 +39,9 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
 Accede en [http://localhost](http://localhost)
 
 ---
-
-## 🖼 Demo Online
-*(Si lo despliegas en Render/Railway/Fly.io pondrías aquí el link, por ejemplo)*  
-**[Ver demo](https://tudemo.com)**
-
 ---
 
-## 📂 Estructura
+## Estructura
 ```
 .
 ├── frontend/    # React app (Landing + Tablero)
@@ -59,21 +52,22 @@ Accede en [http://localhost](http://localhost)
 └── README.md
 ```
 
-## 📄 Licencia
+## Licencia
 
 Licenciado bajo la **Licencia MIT**.  
 Consulta [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## 👩‍💻 Autora
+## Autora
 
 **Celia Rico Gutiérrez**  
 Ingeniera DevOps — Automatización CI/CD, modularización, empaquetado reproducible  
-🔗 [LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
-🔗 [Malt](https://www.malt.es/profile/celiaricogutierrez)
-🔗 [UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
+[LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
+[Malt](https://www.malt.es/profile/celiaricogutierrez)
+[UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
 
 ---
 
-📅 _Última actualización: julio de 2025_
+
+_Última actualización: julio de 2025_
