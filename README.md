@@ -1,12 +1,10 @@
 # Sticky Notes – Dockerized Full-Stack App
 
-![Sticky Notes Screenshot](./docs/screenshot.png)
-
 A simple yet modern notes application, designed to showcase a **fully dockerized Full-Stack flow (React + Node.js + Postgres)**, with separate environments for development and production.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Frontend:** React with React Router, clean SaaS-style design.
 - **Backend:** Node.js + Express + Postgres (real persistence).
@@ -17,7 +15,7 @@ A simple yet modern notes application, designed to showcase a **fully dockerized
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 - React + React Router (Frontend)
 - Node.js + Express (API)
 - PostgreSQL 15 (DB)
@@ -26,7 +24,7 @@ A simple yet modern notes application, designed to showcase a **fully dockerized
 
 ---
 
-## 📦 How to Run the Project
+## How to Run the Project
 
 ### Development (with hot reload)
 ```bash
@@ -42,13 +40,9 @@ Access at [http://localhost](http://localhost)
 
 ---
 
-## 🖼 Online Demo
-*(If you deploy on Render/Railway/Fly.io, you would put the link here, for example)*  
-**[View demo](https://tudemo.com)**
-
 ---
 
-## 📂 Structure
+## Structure
 ```
 .
 ├── frontend/    # React app (Landing + Board)
@@ -59,21 +53,22 @@ Access at [http://localhost](http://localhost)
 └── README.md
 ```
 
-## 📄 License
+## License
 
 Licensed under the **MIT License**.  
 See [LICENSE](LICENSE) for more details.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Celia Rico Gutiérrez**  
 DevOps Engineer — CI/CD automation, modularization, reproducible packaging  
-🔗 [LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
-🔗 [Malt](https://www.malt.es/profile/celiaricogutierrez)
-🔗 [UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
+[LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
+[Malt](https://www.malt.es/profile/celiaricogutierrez)
+[UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
 
 ---
 
-📅 _Last updated: July 2025_
+_Last updated: July 2025_
+
