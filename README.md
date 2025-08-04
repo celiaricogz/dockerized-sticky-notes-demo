@@ -2,6 +2,11 @@
 
 A simple yet modern notes application, designed to showcase a **fully dockerized Full-Stack flow (React + Node.js + Postgres)**, with separate environments for development and production.
 
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+<img src="docs/images/pagina-principal.png" alt="Main Page" width="400"/>
+    <img src="docs/images/notes.png" alt="Sticky Notes Board" width="400"/>
+</div>
+
 ---
 
 ## Features
@@ -37,6 +42,10 @@ Access at [http://localhost:3000](http://localhost:3000)
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
 ```
 Access at [http://localhost](http://localhost)
+
+<div align="center">
+    <img src="docs/images/containers.PNG" alt="Docker Containers Overview" width="700"/>
+</div>
 
 ---
 
