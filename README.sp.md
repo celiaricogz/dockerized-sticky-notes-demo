@@ -80,4 +80,4 @@ Ingeniera DevOps — Automatización CI/CD, modularización, empaquetado reprodu
 
 ---
 
-_~Última actualización: agosto de 2025~_
+_\~Última actualización: agosto de 2025\~_

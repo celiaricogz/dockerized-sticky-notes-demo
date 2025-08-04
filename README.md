@@ -80,5 +80,5 @@ DevOps Engineer — CI/CD automation, modularization, reproducible packaging
 
 ---
 
-_~Last updated: August 2025~_
+_\~Last updated: August 2025\~_
 
